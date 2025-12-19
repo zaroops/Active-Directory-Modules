@@ -46,7 +46,7 @@ The newly created user logs into a Windows 10 workstation for the first time.
 1. Logged out of the administrator account on the Windows 10 client.
 2. Logged in using the domain credentials:
 3. Allowed Windows to complete first-time profile setup.
-4. Verified that a new user profile folder was created at:
+4. Verified that a new user profile folder was created at: C:\Users\zach
 
 
 ### Result
@@ -62,7 +62,7 @@ The user reports they forgot their password and cannot log in.
 ### Steps Taken
 1. Logged into the domain controller as an administrator.
 2. Opened **Active Directory Users and Computers**.
-3. Right-clicked the user account (`jdoe`).
+3. Right-clicked the user account (`zach`).
 4. Selected **Reset Password**.
 5. Set a new password and communicated it securely to the user.
 
