@@ -1,134 +1,105 @@
-## 🧪 Windows Help Desk Lab – Domain User Management (Module 1)
-📌 Overview
+# 🧪 Windows Help Desk Lab – Domain User Management (Module 1)
 
-This lab simulates common Tier 1 Help Desk tasks related to Windows domain user management in an enterprise environment. The objective was to gain hands-on experience creating, managing, and troubleshooting domain user accounts using Active Directory Users and Computers (ADUC).
+## 📌 Overview
+This lab simulates common **Tier 1 Help Desk tasks** related to **Windows domain user management** in an enterprise environment. The objective was to gain hands-on experience creating, managing, and troubleshooting domain user accounts using **Active Directory Users and Computers (ADUC)**.
 
 These tasks reflect real-world help desk scenarios such as onboarding new users, resolving login issues, and unlocking locked accounts.
 
+---
+
 ## 🖥️ Environment
+- **Domain Controller:** Windows Server 2022  
+- **Client Machine:** Windows 10 (domain-joined)  
+- **Domain:** `company.local`  
+- **Tools Used:**  
+  - Active Directory Users and Computers   
+  - Windows File Explorer  
 
-Domain Controller: Windows Server 2022
-
-Client Machine: Windows 10 (domain-joined)
-
-Domain: company.local
-
-Tools Used:
-
-Active Directory Users and Computers (ADUC)
-
-Windows File Explorer
+---
 
 ## 👤 Scenario 1: Creating a New Domain User (User Onboarding)
-Scenario
 
+### Scenario
 A new employee has joined the company and requires a domain account to log into their workstation.
 
-Steps Taken
+### Steps Taken
+1. Logged into the Windows Server 2022 domain controller as a Domain Administrator.
+2. Opened **Active Directory Users and Computers (ADUC)**.
+3. Navigated to the **Users** container.
+4. Created a new user account:
+   - Name: Zach R 
+   - Username: `zach`
+5. Set an initial password and configured account settings.
+6. Confirmed the user account was successfully created.
 
-Logged into the Windows Server 2022 domain controller as a Domain Administrator.
-
-Opened Active Directory Users and Computers (ADUC).
-
-Navigated to the Users container.
-
-Created a new user account:
-
-Name: John Doe
-
-Username: jdoe
-
-Set an initial password and configured account settings.
-
-Confirmed the user account was successfully created.
-
-Result
-
+### Result
 The domain user account was successfully created and available for login across domain-joined machines.
 
-## 💻 Scenario 2: First-Time Login and Profile Creation
-Scenario
+---
 
+## 💻 Scenario 2: First-Time Login and Profile Creation
+
+### Scenario
 The newly created user logs into a Windows 10 workstation for the first time.
 
-Steps Taken
+### Steps Taken
+1. Logged out of the administrator account on the Windows 10 client.
+2. Logged in using the domain credentials:
+3. Allowed Windows to complete first-time profile setup.
+4. Verified that a new user profile folder was created at:
 
-Logged out of the administrator account on the Windows 10 client.
 
-Logged in using the domain credentials (domain\jdoe).
-
-Allowed Windows to complete first-time profile setup.
-
-Verified that a new user profile folder was created at:
-
-C:\Users\jdoe
-
-Result
-
+### Result
 The user successfully logged in, and Windows automatically created a user profile containing desktop, documents, and user-specific settings.
 
-## 🔐 Scenario 3: Password Reset (Forgotten Password)
-Scenario
+---
 
+## 🔐 Scenario 3: Password Reset (Forgotten Password)
+
+### Scenario
 The user reports they forgot their password and cannot log in.
 
-Steps Taken
+### Steps Taken
+1. Logged into the domain controller as an administrator.
+2. Opened **Active Directory Users and Computers**.
+3. Right-clicked the user account (`jdoe`).
+4. Selected **Reset Password**.
+5. Set a new password and communicated it securely to the user.
 
-Logged into the domain controller as an administrator.
-
-Opened Active Directory Users and Computers.
-
-Right-clicked the user account (jdoe).
-
-Selected Reset Password.
-
-Set a new password and communicated it securely to the user.
-
-Result
-
+### Result
 The user was able to log in successfully using the new password.
 
-## 🔒 Scenario 4: Account Lockout and Unlocking
-Scenario
+---
 
+## 🔒 Scenario 4: Account Lockout and Unlocking
+
+### Scenario
 The user account became locked after multiple failed login attempts.
 
-Steps Taken
+### Steps Taken
+1. Verified the account lockout status in ADUC.
+2. Opened the user’s account properties.
+3. Navigated to the **Account** tab.
+4. Selected **Unlock account**.
+5. Applied the changes.
 
-Verified the account lockout status in ADUC.
-
-Opened the user’s account properties.
-
-Navigated to the Account tab.
-
-Selected Unlock account.
-
-Applied the changes.
-
-Result
-
+### Result
 The account was unlocked, and the user regained access to their workstation.
 
+---
+
 ## 🧠 Key Concepts Learned
+- Domain user accounts are centrally managed using Active Directory.
+- User profiles are created automatically on first login.
+- Common login issues include expired passwords and account lockouts.
+- Help desk technicians frequently reset passwords and unlock accounts as Tier 1 support tasks.
 
-Domain user accounts are centrally managed using Active Directory.
-
-User profiles are created automatically on first login.
-
-Common login issues include expired passwords and account lockouts.
-
-Help desk technicians frequently reset passwords and unlock accounts as Tier 1 support tasks.
-
-🎤 Interview Talking Point
-
-“When a user reports login issues, I check Active Directory to verify whether the account is locked, disabled, or has an expired password. I then reset or unlock the account as needed and confirm successful login.”
+---
 
 ## ✅ Skills Demonstrated
+- Active Directory user management  
+- Password resets and account unlocks  
+- Domain authentication concepts  
+- Entry-level help desk troubleshooting  
 
-Active Directory user management
-
-Password resets and account unlocks
-
-Domain authentication concepts
-
-Entry-level help desk troubleshooting
+---
