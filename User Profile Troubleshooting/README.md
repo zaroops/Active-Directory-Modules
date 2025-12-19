@@ -85,7 +85,7 @@ Help desk technician restores the user’s missing files.
 - Documents
 - Downloads
 5. Pasted them into: C:\Users\zach
-6. Logged back in as `domain\jdoe`.
+6. Logged back in as `homelb\zach`.
 
 ### Result
 The user’s desktop files and documents were successfully restored.
