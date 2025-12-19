@@ -1,11 +1,11 @@
-🧪 Windows Help Desk Lab – Domain User Management (Module 1)
+## 🧪 Windows Help Desk Lab – Domain User Management (Module 1)
 📌 Overview
 
 This lab simulates common Tier 1 Help Desk tasks related to Windows domain user management in an enterprise environment. The objective was to gain hands-on experience creating, managing, and troubleshooting domain user accounts using Active Directory Users and Computers (ADUC).
 
 These tasks reflect real-world help desk scenarios such as onboarding new users, resolving login issues, and unlocking locked accounts.
 
-🖥️ Environment
+## 🖥️ Environment
 
 Domain Controller: Windows Server 2022
 
@@ -19,7 +19,7 @@ Active Directory Users and Computers (ADUC)
 
 Windows File Explorer
 
-👤 Scenario 1: Creating a New Domain User (User Onboarding)
+## 👤 Scenario 1: Creating a New Domain User (User Onboarding)
 Scenario
 
 A new employee has joined the company and requires a domain account to log into their workstation.
@@ -46,7 +46,7 @@ Result
 
 The domain user account was successfully created and available for login across domain-joined machines.
 
-💻 Scenario 2: First-Time Login and Profile Creation
+## 💻 Scenario 2: First-Time Login and Profile Creation
 Scenario
 
 The newly created user logs into a Windows 10 workstation for the first time.
@@ -67,7 +67,7 @@ Result
 
 The user successfully logged in, and Windows automatically created a user profile containing desktop, documents, and user-specific settings.
 
-🔐 Scenario 3: Password Reset (Forgotten Password)
+## 🔐 Scenario 3: Password Reset (Forgotten Password)
 Scenario
 
 The user reports they forgot their password and cannot log in.
@@ -88,7 +88,7 @@ Result
 
 The user was able to log in successfully using the new password.
 
-🔒 Scenario 4: Account Lockout and Unlocking
+## 🔒 Scenario 4: Account Lockout and Unlocking
 Scenario
 
 The user account became locked after multiple failed login attempts.
@@ -109,7 +109,7 @@ Result
 
 The account was unlocked, and the user regained access to their workstation.
 
-🧠 Key Concepts Learned
+## 🧠 Key Concepts Learned
 
 Domain user accounts are centrally managed using Active Directory.
 
@@ -123,7 +123,7 @@ Help desk technicians frequently reset passwords and unlock accounts as Tier 1 s
 
 “When a user reports login issues, I check Active Directory to verify whether the account is locked, disabled, or has an expired password. I then reset or unlock the account as needed and confirm successful login.”
 
-✅ Skills Demonstrated
+## ✅ Skills Demonstrated
 
 Active Directory user management
 
