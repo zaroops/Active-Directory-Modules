@@ -1,7 +1,7 @@
 # 🧪 Windows Help Desk Lab – Shared Folders & NTFS Permissions (Module 3)
 
 ## 📌 Overview
-This lab demonstrates how **shared folders and NTFS permissions** are configured and troubleshot in a Windows domain environment. The goal of this lab was to gain hands-on experience with one of the most common Tier 1 Help Desk issues:
+This lab demonstrates how **shared folders and NTFS permissions** are configured and troubleshot in a Windows domain environment. The goal of this lab was to gain hands-on experience with one of the most common issues:
 
 > **“I can see the shared folder, but I can’t access it.”**
 
